@@ -16,9 +16,18 @@ body, html {
     font-size: 0.8rem;
     font-weight: 900;
     margin: 0 1rem; }
-  .navbar .navbar-toggler {
-    color: white;
-    background-color: grey; }
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: white; }
+
+.navbar-inverse .navbar-nav .nav-link:hover {
+  color: white; }
+
+.navbar-alt {
+  background-color: rgba(255, 255, 255, 0); }
+
+.fa-bars {
+  color: #444; }
 
 /*HEADER*/
 .main-header {
