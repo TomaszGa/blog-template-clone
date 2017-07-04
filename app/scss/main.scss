@@ -12,7 +12,7 @@ body, html{
 }
 .navbar{
 	padding: 1rem 1rem;
-	position: absolute;
+	position: absolute !important;
 	a{
 		color: $header-text-color;
 	}
@@ -34,6 +34,29 @@ body, html{
 .fa-bars{
   color: #444;
 }
+.navbar a.navbar-brand{
+font-size: 1.5rem !important;
+}
+@media (max-width: 992px) {
+.navbar{
+	padding: 0.2rem 1rem;
+}
+.navbar-alt{
+	background-color: rgba(255,255,255,1);
+}
+.navbar-inverse .navbar-nav .nav-link{
+	color: #444;
+}
+.navbar-inverse .navbar-nav .nav-link:hover{
+	color: #444;
+}
+.navbar-brand{
+	color: #444 !important;
+}
+.navbar-toggler{
+	margin-top: 8px;
+}
+}
 
 /*HEADER*/
 .main-header{
@@ -43,6 +66,7 @@ body, html{
 	width: 100%;
 	height: 70vh;
 }
+
 .header-wrapper{
 	height: 100%;
 	width: 100%;
@@ -55,7 +79,7 @@ body, html{
 	text-align: center;
 }
 .header-text h1{
-	font-size: 5rem;
+	font-size: 3.7rem;
 	font-weight: 900;
 }
 .header-text hr{
@@ -63,7 +87,18 @@ body, html{
 	width: 10%;
 }
 .header-text h2{
-	font-weight: 700;
+	font-weight: 900;
+}
+@media (max-width: 992px) {
+  .main-header {
+ 	height: 100vh;
+  }
+  .header-text h1{
+  	font-size: 2.9rem;
+  }
+  .header-text h2{
+  	font-size: 2rem
+  }
 }
 /*CONTENT*/
 .content-text{
@@ -100,7 +135,7 @@ font-size: 1.4rem;
 border: 1px solid grey;
 }
 .older-button:hover{
-	background-color: teal;
+	background-color: $content-text-color;
 	color: white;
 }
 .older-button:focus{

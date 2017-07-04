@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 	pageAnimations.checkWidth();	
 	$(window).resize(function(){
 		pageAnimations.checkWidth();
@@ -44,4 +44,4 @@ const pageAnimations = {
 			"color" : "#444"
 		});		
 	}
-}
+}*/
